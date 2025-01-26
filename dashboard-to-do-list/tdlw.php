@@ -8,6 +8,7 @@
 	License: GPL2
 	Text Domain: dashboard-to-do-list
 	Domain Path: /languages
+	Tested up to: 6.7
 	*/
 
 	if ( ! defined( 'ABSPATH' ) ) exit;

@@ -3,7 +3,7 @@ Contributors: arapps92
 Tags: todo list, dashboard widget, todo, to-do, tasks
 Donate link: http://paypal.me/andrewrapps
 Requires at least: 4.0
-Tested up to: 6.6
+Tested up to: 6.7
 Requires PHP: 5.6
 Stable tag: 1.3.2
 License: GPLv2 or later
@@ -30,7 +30,7 @@ Simply install and activate the plugin, open your Admin Dashboard and write your
 
 == Installation ==
 = Via WordPress =
-1. From the WordPress Dashboard, go to Plugins > Add New
+1. From the WordPress Dashboard, go to Plugins > Add New.
 2. Search for 'Dashboard To-Do List' and click Install. Then click Activate.
 3. Go to the WordPress Dashboard to create your to-do list.
 
