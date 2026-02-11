@@ -3,7 +3,7 @@ Contributors: arapps92
 Tags: todo list, dashboard widget, todo, to-do, tasks
 Donate link: http://paypal.me/andrewrapps
 Requires at least: 4.0
-Tested up to: 6.7
+Tested up to: 6.9
 Requires PHP: 5.6
 Stable tag: 1.3.2
 License: GPLv2 or later
