@@ -3,52 +3,81 @@ Contributors: arapps92
 Tags: todo list, dashboard widget, todo, to-do, tasks
 Donate link: http://paypal.me/andrewrapps
 Requires at least: 4.0
-Tested up to: 6.9
+Tested up to: 7.0
 Requires PHP: 5.6
-Stable tag: 1.3.2
+Stable tag: 2.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A dashboard to-do list widget with the option to show the to-do list on the website. This is a great tool for web developers building a new website.
+A simple dashboard to-do list widget with the option to display your list as a floating panel on your website.
 
 == Description ==
+
 Are you a web designer or developer? Or are you creating a plugin or a theme? Are you finding hard to keep track of your tasks or your notepad is just untidy?
 
-Add this useful tool to your WordPress website, create a to-do list from within the main Admin Dashboard and display it on your website.
+Add this useful tool to keep your project tasks in one place, right inside WordPress. Dashboard To-Do List adds a widget to your Admin Dashboard where you can write and manage a to-do list, then optionally show it as a collapsible floating panel on the frontend of your site.
 
-Keep your list in one place and specific to your website/project.
+**Plugin Features**
 
-== Plugin Features ==
-
-* Easily edit your To-Do list from the Admin Dashboard.
-* Allow Editors to view and edit the dashboard To-Do list widget as well as Administrators.
-* Display the To-Do list as a floating widget on the frontend of your website.
-* Choose the position of the floating widget.
-* Restrict the visibility of the floating widget to logged in Administrators and/or Editors only.
-
-Simply install and activate the plugin, open your Admin Dashboard and write your list.
+* Add, edit, and delete to-do items directly from the Admin Dashboard
+* Mark an item as complete (shown with a strikethrough on the frontend but stays in your list) or delete items to remove them from your list
+* Bulk Edit mode for pasting or reorganising multiple items at once
+* Display the list as a collapsible floating panel on your website
+* Choose left or right positioning for the frontend panel
+* Pick a custom colour for the frontend panel
+* Control which user roles can see the dashboard widget
+* Control which user roles (including guests) can see the frontend panel
 
 == Installation ==
 = Via WordPress =
 1. From the WordPress Dashboard, go to Plugins > Add New.
 2. Search for 'Dashboard To-Do List' and click Install. Then click Activate.
-3. Go to the WordPress Dashboard to create your to-do list.
+3. Go to the WordPress Dashboard to start building your list.
 
 = Manual =
-1. Upload the folder /dashboard-to-do-list/ to the /wp-content/plugins/ directory.
-2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. Go to the WordPress Dashboard to create your to-do list.
+1. Upload the /dashboard-to-do-list/ folder to the /wp-content/plugins/ directory.
+2. Activate the plugin through the Plugins menu in WordPress.
+3. Go to the WordPress Dashboard to start building your list.
 
 == Screenshots ==
-1. Administrator's view of the Dashboard Website To-Do List Widget
-2. Editor's view of the Dashboard Website To-Do List Widget
-3. To-Do list on the frontend
+1. View of the Dashboard Website To-Do List Widget
+2. View of the Bulk Editor section on the Dashboard Website To-Do List Widget
+3. View of the Dashboard Website To-Do List Widget settings
+4. View of the To-Do List on the frontend
 
 == Frequently Asked Questions ==
 
-= How do I use Dashboard To-Do List =
+= How do I create my to-do list? =
 
-Once Dashboard To-Do List is installed, simply go to the Admin Dashboard page and you'll see the Website To-Do List widget. Use the textbox to write your list, one to-do per line.
+After activating the plugin, go to your Admin Dashboard. You'll see the Website To-Do List widget. Type a new item and click Add. Items are saved instantly when added. To save all changes including settings, click the Save button.
+
+= How do I edit or remove items? =
+
+Each item in the checklist is an editable text field. Click into it and type to make changes, then click Save. To remove an item, click the ✕ button on the right. You'll be asked to confirm, and the deletion is only made permanent when you click Save. Reloading the page before saving will restore any deleted items.
+
+= What is Bulk Edit? =
+
+Bulk Edit opens a plain textarea containing your full list, one item per line. It's useful for pasting in a list of items or reordering by cutting and pasting lines. Click Apply & close to rebuild the checklist from your edits.
+
+= How does the DONE marker work? =
+
+In the Bulk Edit view, add the word DONE (case insensitive) at the end of any line. On the frontend, that item will display with a strikethrough but remain in your list. Use the Checklist view if you want to permanently remove completed items.
+
+= How do I show the list on my website? =
+
+In the dashboard widget (administrators only), tick the roles you want to see the floating panel under "Show floating list on website for:". You can include specific user roles or Guests (visitors who are not logged in). Leave all boxes unticked to hide the panel from everyone.
+
+= Can I show the widget to custom user roles? =
+
+Yes. Both the dashboard widget visibility and the frontend panel visibility pull from all registered roles on your site, including any custom roles added by plugins.
+
+= Can guests (non-logged-in visitors) see the frontend panel? =
+
+Yes. Tick the "Guests (not logged in)" option under "Show floating list on website for:" and the panel will be visible to anyone who is not logged in.
+
+= What does the colour change? =
+
+The colour picker in the dashboard widget settings (visible to administrators) lets you choose the colour of the frontend panel header.
 
 = Where do I report security bugs? =
 
@@ -59,6 +88,19 @@ You can report security bugs through the Patchstack Vulnerability Disclosure Pro
 If your question is not answered here, please create a new topic in the [WordPress support forum](https://wordpress.org/support/plugin/dashboard-to-do-list/).
 
 == Changelog ==
+
+= 2.0.0 =
+* Replaced textarea with an interactive checklist. Add items individually, tick to mark as done, delete with confirmation
+* Added Bulk Edit mode for pasting or editing multiple items at once as plain text
+* Added DONE marker. End any item with the word DONE to display it with a strikethrough on the frontend without removing it from the list
+* Added colour picker setting for frontend panel
+* Replaced admin/editor role checkboxes with a full multi-role selector for both dashboard widget visibility and frontend panel visibility; supports custom user roles
+* Added Guests option so the frontend panel can be shown to visitors who are not logged in
+* Frontend panel is now collapsible. 
+* Frontend panel header now shows a cog icon linking to the dashboard, and an animated chevron for the collapse toggle
+* Improved frontend panel design and responsive behaviour
+* Improved admin widget layout and settings organisation
+
 = 1.3.2 =
 * Patched reported Cross Site Request Forgery (CSRF) vulnerability when saving the dashboard widget.
 

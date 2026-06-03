@@ -1,1 +1,202 @@
-.wp-admin #dashboard-widgets #ardtdw h2{background-color:#0099c2;color:#fff;padding:12px;justify-content:flex-start}.wp-admin #dashboard-widgets #ardtdw .handlediv{height:44px}.wp-admin #dashboard-widgets #ardtdw .handlediv .toggle-indicator{color:#fff}.wp-admin #dashboard-widgets #ardtdw .ardtdw-message{background:#fff;border-left:4px solid #fff;box-shadow:0 1px 1px 0 rgba(0,0,0,.1);margin:5px 0 15px;padding:1px 12px}.wp-admin #dashboard-widgets #ardtdw .ardtdw-updated{border-left-color:#46b450}.wp-admin #dashboard-widgets #ardtdw .ardtdw-error{border-left-color:#dc3232}.wp-admin #dashboard-widgets #ardtdw input.input{width:100%;padding:5px}.wp-admin #dashboard-widgets #ardtdw textarea{width:100%}.wp-admin #dashboard-widgets #ardtdw p.field-comment{margin-top:-15px;font-style:italic;margin-bottom:20px}.wp-admin #dashboard-widgets #ardtdw h2:before{color:#fff;font:400 20px/1 dashicons;speak:none;display:inline-block;content:"\f203";padding:0 8px 0 0;position:relative;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-decoration:none!important;vertical-align:top}.wp-admin #dashboard-widgets #ardtdw .handle-actions{background-color:#0099c2;color:#fff}.wp-admin #dashboard-widgets #ardtdw .handle-actions *{color:#fff}
+.wp-admin.branch-7 #dashboard-widgets #ardtdw .postbox-header,
+.wp-admin.branch-7-1 #dashboard-widgets #ardtdw .postbox-header,
+.wp-admin.branch-7-2 #dashboard-widgets #ardtdw .postbox-header,
+.wp-admin.branch-7-3 #dashboard-widgets #ardtdw .postbox-header {
+border-radius: 8px 8px 0 0;
+}
+.wp-admin #dashboard-widgets #ardtdw .postbox-header {
+    background-color: var(--wp-admin-theme-color);
+}
+.wp-admin #dashboard-widgets #ardtdw h2 {
+    color: #fff;
+    padding: 12px;
+    justify-content: flex-start;
+}
+.wp-admin #dashboard-widgets #ardtdw h2:before {
+    color: #fff;
+    font: 400 20px/1 dashicons;
+    speak: none;
+    display: inline-block;
+    content: "\f203";
+    padding: 0 8px 0 0;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none !important;
+    vertical-align: top;
+}
+.wp-admin #dashboard-widgets #ardtdw .handlediv {
+    height: 44px;
+}
+.wp-admin #dashboard-widgets #ardtdw .handlediv .toggle-indicator,
+.wp-admin #dashboard-widgets #ardtdw .handle-actions,
+.wp-admin #dashboard-widgets #ardtdw .handle-actions * {
+    color: #fff;
+}
+.wp-admin #dashboard-widgets #ardtdw .ardtdw-message {
+    background: #fff;
+    border-left: 4px solid #fff;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 0.1);
+    margin: 0 0 14px;
+    padding: 1px 12px;
+}
+.wp-admin #dashboard-widgets #ardtdw .ardtdw-updated {
+    border-left-color: #46b450;
+}
+.wp-admin #dashboard-widgets #ardtdw .ardtdw-error {
+    border-left-color: #dc3232;
+}
+.wp-admin #dashboard-widgets #ardtdw p.field-comment {
+    margin-top: 0;
+    font-style: italic;
+    margin-bottom: 16px;
+    font-size: 12px;
+    color: #666;
+}
+.wp-admin #dashboard-widgets #ardtdw #ardtdw-checklist {
+    margin: 0 0 10px;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.wp-admin #dashboard-widgets #ardtdw .ardtdw-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 2px 10px;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 0;
+}
+.wp-admin #dashboard-widgets #ardtdw .ardtdw-item:last-child {
+    border-bottom: none;
+}
+.wp-admin #dashboard-widgets #ardtdw .ardtdw-item:nth-child(even) {
+    background: #fafafa;
+}
+.wp-admin #dashboard-widgets #ardtdw .ardtdw-done-cb {
+    flex-shrink: 0;
+    margin: 0;
+    cursor: pointer;
+    accent-color: #0099c2;
+}
+.wp-admin #dashboard-widgets #ardtdw .ardtdw-item-text {
+    flex: 1;
+    border: none;
+    background: #fff0;
+    font-size: 13px;
+    padding: 2px 4px;
+    border-radius: 2px;
+    color: #333;
+    min-width: 0;
+}
+.wp-admin #dashboard-widgets #ardtdw .ardtdw-item-text:focus {
+    outline: none;
+    background: #f0f8ff;
+    box-shadow: 0 0 0 1px #0099c2;
+}
+.wp-admin #dashboard-widgets #ardtdw .ardtdw-item:has(.ardtdw-done-cb:checked) .ardtdw-item-text {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.wp-admin #dashboard-widgets #ardtdw .ardtdw-delete-btn {
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 13px;
+    line-height: 1;
+    padding: 2px 5px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.wp-admin #dashboard-widgets #ardtdw .ardtdw-delete-btn:hover {
+    color: #dc3232;
+}
+.wp-admin #dashboard-widgets #ardtdw .ardtdw-empty {
+    padding: 10px 12px;
+    color: #999;
+    font-style: italic;
+    font-size: 13px;
+}
+.wp-admin #dashboard-widgets #ardtdw .ardtdw-add-row {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+.wp-admin #dashboard-widgets #ardtdw .ardtdw-add-row input[type="text"] {
+    flex: 1;
+    padding: 5px 8px;
+    font-size: 13px;
+}
+.wp-admin #dashboard-widgets #ardtdw #ardtdw-raw-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 12px;
+    color: #0099c2;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+.wp-admin #dashboard-widgets #ardtdw #ardtdw-raw-toggle:hover {
+    color: #007a9e;
+}
+.wp-admin #dashboard-widgets #ardtdw #ardtdw-raw-textarea {
+    width: 100%;
+    margin-bottom: 4px;
+}
+.wp-admin #dashboard-widgets #ardtdw #ardtdw-settings-toggle {
+   display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    padding: 7px 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+.wp-admin #dashboard-widgets #ardtdw #ardtdw-settings-toggle:hover {
+    color: var(--wp-admin-theme-color);
+}
+.wp-admin #dashboard-widgets #ardtdw .ardtdw-settings-arrow {
+    font-size: 10px;
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+.wp-admin #dashboard-widgets #ardtdw #ardtdw-settings-panel {
+    padding-top: 4px;
+}
+.wp-admin #dashboard-widgets #ardtdw .ardtdw-divider {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 16px 0;
+}
+.wp-admin #dashboard-widgets #ardtdw .ardtdw-roles-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 20px;
+    margin-bottom: 8px;
+}
+.wp-admin #dashboard-widgets #ardtdw .ardtdw-roles-grid label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+}
+.wp-admin #dashboard-widgets #ardtdw .ardtdw-row {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+.wp-admin #dashboard-widgets #ardtdw .ardtdw-row > div {
+    min-width: 150px;
+}

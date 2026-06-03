@@ -1,77 +1,130 @@
 #ardtdw-sitewidget {
-  position: fixed;
-  top: calc(50% - 200px);
-  width: 100%;
-  max-width: 300px;
-  z-index: 999
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(100% - 40px);
+    max-width: 280px;
+    background-color: #fff;
+    z-index: 9999;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
-
 .ardtdw-sitewidget.ardtdw-left {
-  left: 0
+    left: 0;
+    border-radius: 0 4px 4px 0;
 }
-
 .ardtdw-sitewidget.ardtdw-right {
-  right: 0
+    right: 0;
+    border-radius: 4px 0 0 4px;
 }
-
-#ardtdw-sitewidget p, #ardtdw-sitewidget ul {
-  margin: 0;
-  padding: 0
-}
-
 #ardtdw-sitewidget .ardtdw-sitewidget-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background: #2980b9;
-  border: 1px solid #2980b9;
-  color: #fff;
-  font-size: 20px;
-  text-transform: uppercase;
-  line-height: 1em;
-  font-family: Verdana, Geneva, sans-serif;
-  font-weight: 700;
-  position: relative;
-  border-radius: 2px 0 0 0
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    border-radius: 4px 0 0 0;
+    user-select: none;
 }
-
+#ardtdw-sitewidget.ardtdw-left .ardtdw-sitewidget-head {
+    border-radius: 0 4px 0 0;
+}
+#ardtdw-sitewidget .ardtdw-sitewidget-head p {
+    margin: 0;
+    padding: 0;
+}
 #ardtdw-sitewidget .ardtdw-head-icons {
-  display: flex;
-  gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
-
 #ardtdw-sitewidget .ardtdw-sitewidget-head a {
-  /* top: 16px;
-  position: absolute;
-  right: 20px; */
-  font-size: 20px;
-  color: #fff;
-  text-decoration: none !important;
-  padding: 3px 5px 5px;
-  background: rgba(255, 255, 255, .1);
-  border-radius: 2px
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none !important;
+    padding: 5px 7px;
+    background: rgb(255 255 255 / 0.15);
+    border-radius: 3px;
+    line-height: 1;
 }
-
 #ardtdw-sitewidget .ardtdw-sitewidget-head a:hover {
-  text-decoration: none !important;
-  background: rgba(255, 255, 255, .2)
+    background: rgb(255 255 255 / 0.3);
+    text-decoration: none !important;
 }
-
+#ardtdw-sitewidget .ardtdw-cog-link {
+    display: flex;
+    align-items: center;
+}
+#ardtdw-sitewidget .ardtdw-toggle {
+    background: rgb(255 255 255 / 0.15);
+    border: none;
+    color: #fff;
+    font-size: 11px;
+    padding: 6px 7px;
+    border-radius: 3px !important;
+    cursor: pointer;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    transition: background 0.15s;
+}
+#ardtdw-sitewidget .ardtdw-toggle:hover {
+    background: rgb(255 255 255 / 0.3);
+}
+#ardtdw-sitewidget .ardtdw-toggle svg {
+    transition: transform 0.2s ease;
+}
+#ardtdw-sitewidget .ardtdw-toggle-collapsed svg {
+    transform: rotate(180deg);
+}
 #ardtdw-sitewidget .ardtdw-sitewidget-list {
-  border: 1px solid #f3f3f3;
-  max-height: 400px;
-  overflow-y: auto;
-  border-radius: 0 0 0 2px;
-  background: #fff
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-top: none;
+    max-height: 360px;
+    overflow-y: auto;
+    border-radius: 0 0 0 4px;
 }
-
+#ardtdw-sitewidget.ardtdw-left .ardtdw-sitewidget-list {
+    border-radius: 0 0 4px 0;
+}
+#ardtdw-sitewidget .ardtdw-sitewidget-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 #ardtdw-sitewidget .ardtdw-sitewidget-list li {
-  padding: 10px 20px;
-  margin: 0;
-  list-style: none
+    padding: 9px 16px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.4;
+    border-bottom: 1px solid #f0f0f0;
+    word-wrap: break-word;
 }
-
+#ardtdw-sitewidget .ardtdw-sitewidget-list li:last-child {
+    border-bottom: none;
+}
 #ardtdw-sitewidget .ardtdw-sitewidget-list li:nth-child(even) {
-  background: #e6e6e6
+    background: #f7f7f7;
+}
+#ardtdw-sitewidget .ardtdw-sitewidget-list li.ardtdw-done {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+@media (max-width: 480px) {
+    #ardtdw-sitewidget {
+        max-width: 220px;
+    }
+    #ardtdw-sitewidget .ardtdw-sitewidget-head {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+    #ardtdw-sitewidget .ardtdw-sitewidget-list li {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
 }
