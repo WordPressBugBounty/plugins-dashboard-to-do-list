@@ -3,9 +3,9 @@ Contributors: arapps92
 Tags: todo list, dashboard widget, todo, to-do, tasks
 Donate link: http://paypal.me/andrewrapps
 Requires at least: 4.0
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 5.6
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -88,6 +88,11 @@ You can report security bugs through the Patchstack Vulnerability Disclosure Pro
 If your question is not answered here, please create a new topic in the [WordPress support forum](https://wordpress.org/support/plugin/dashboard-to-do-list/).
 
 == Changelog ==
+
+= 2.0.1 =
+* Removed header colour from the dashboard widget.
+* Fixed empty default header colour on frontend widget. 
+* Fixed toggle bug.
 
 = 2.0.0 =
 * Replaced textarea with an interactive checklist. Add items individually, tick to mark as done, delete with confirmation

@@ -22,7 +22,7 @@ if ( ! function_exists( 'ardtdw_widget_html' ) ) {
 			}
 		}
 
-		$color_style     = $color ? esc_attr( $color ) : 'var(--wp-admin-theme-color)';
+		$color_style     = $color ? esc_attr( $color ) : '#0073aa';
 		$position_class  = in_array( $position, array( 'left', 'right' ), true ) ? $position : 'right';
 		
 		echo '<div id="ardtdw-sitewidget" class="ardtdw-sitewidget ardtdw-' . $position_class . '">';

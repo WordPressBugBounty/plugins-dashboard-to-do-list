@@ -114,7 +114,7 @@
 			function setSettings(open) {
 				settingsOpen = open;
 				$settingsPanel.toggle(open);
-				$settingsArrow.css('transform', open ? 'rotate(180deg)' : '');
+				$settingsArrow.css('transform', open ? '' : 'rotate(180deg)');
 				try { localStorage.setItem('ardtdw_settings', open ? '1' : '0'); } catch (e) {}
 			}
 

@@ -106,9 +106,9 @@ if ( ! function_exists( 'ardtdw_widget' ) ) {
 			}
 		}
 
-		$textarea        = stripslashes( get_option( 'ardtdw-textarea' ) );
-		$position        = get_option( 'ardtdw-position', 'right' );
-		$color           = get_option( 'ardtdw-color', '' );
+		$textarea = stripslashes( get_option( 'ardtdw-textarea' ) );
+		$position = get_option( 'ardtdw-position', 'right' );
+		$color = get_option( 'ardtdw-color', '' );
 		$dashboard_roles = ardtdw_get_roles( 'dashboard' );
 		$frontend_roles  = ardtdw_get_roles( 'frontend' );
 		if ( empty( $position ) ) $position = 'right';
@@ -150,7 +150,7 @@ if ( ! function_exists( 'ardtdw_widget' ) ) {
 
 				<button type="button" id="ardtdw-settings-toggle">
 					<?php _e( 'Settings', 'dashboard-to-do-list' ); ?>
-					<span class="toggle-indicator ardtdw-settings-arrow" aria-hidden="true" style=""></span>
+					<span class="toggle-indicator ardtdw-settings-arrow" aria-hidden="true" style="transform:rotate(180deg)"></span>
 				</button>
 
 				<div id="ardtdw-settings-panel" style="display:none;">
@@ -213,7 +213,7 @@ if ( ! function_exists( 'ardtdw_widget' ) ) {
 		</form>
 		<?php
 	}
-}
+	}
 
 // Frontend widget injection 
 if ( ! function_exists( 'ardtdw_widgethtml' ) ) {

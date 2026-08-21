@@ -2,7 +2,7 @@
 /*
 	Plugin Name: Dashboard To-Do List
 	Description: Dashboard To-Do list widget with option to show as a floating list on your website.
-	Version: 2.0.0
+	Version: 2.0.1
 	Author: AR Web Design
 	Author URI: https://arwebdesign.co.uk
 	License: GPL2
